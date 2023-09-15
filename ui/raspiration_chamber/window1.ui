@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>0</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>471</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>15</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>2001-01-01 00:00:00 월요일</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>1001</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>531</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="midLineWidth">
+       <number>0</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>534</width>
+         <height>677</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_69">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Cycle                                          Delay Pump ml</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_27"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>초기화</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_12">
+              <property name="font">
+               <font>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>저장</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QLabel" name="label_62">
+            <property name="text">
+             <string>Cycle 1 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_1"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_1"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_63">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_1"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_64">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_2"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QLabel" name="label_56">
+            <property name="text">
+             <string>Cycle 2 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_2"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_2"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_59">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_3"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_58">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_4"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="QLabel" name="label_89">
+            <property name="text">
+             <string>Cycle 3 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_3"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_3"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_90">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_5"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_91">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_6"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QLabel" name="label_68">
+            <property name="text">
+             <string>Cycle 4 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_4"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_4"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_69">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_7"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_70">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_8"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="QLabel" name="label_86">
+            <property name="text">
+             <string>Cycle 5 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_5"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_5"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_87">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_9"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_88">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_10"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QLabel" name="label_77">
+            <property name="text">
+             <string>Cycle 6 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_6"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_6"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_78">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_11"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_79">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_12"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QLabel" name="label_71">
+            <property name="text">
+             <string>Cycle 7 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_8"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_8"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_72">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_13"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_73">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_14"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_38">
+          <item>
+           <widget class="QLabel" name="label_105">
+            <property name="text">
+             <string>Cycle 8 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_19"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_19"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_106">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_36"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_113">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_37"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="QLabel" name="label_74">
+            <property name="text">
+             <string>Cycle 9 </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_9"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_9"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_75">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_15"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_76">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_16"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>-------------------------------------------------------------------------------------------------------</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_35">
+          <item>
+           <widget class="QLabel" name="label_95">
+            <property name="text">
+             <string>Cycle 10</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_10"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_10"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_96">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_17"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_97">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_18"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QLabel" name="label_101">
+            <property name="text">
+             <string>Cycle 11</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_11"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_11"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_102">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_19"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_103">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_20"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_39">
+          <item>
+           <widget class="QLabel" name="label_107">
+            <property name="text">
+             <string>Cycle 12</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_12"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_12"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_108">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_21"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_109">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_22"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="QLabel" name="label_80">
+            <property name="text">
+             <string>Cycle 13</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_13"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_13"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_81">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_23"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_82">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_24"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_36">
+          <item>
+           <widget class="QLabel" name="label_99">
+            <property name="text">
+             <string>Cycle 14</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_14"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_14"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_100">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_28"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_104">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_29"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_40">
+          <item>
+           <widget class="QLabel" name="label_110">
+            <property name="text">
+             <string>Cycle 15</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_15"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_15"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_111">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_30"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_112">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_31"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QLabel" name="label_92">
+            <property name="text">
+             <string>Cycle 16</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_16"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_16"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_93">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_32"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_94">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_33"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <widget class="QLabel" name="label_114">
+            <property name="text">
+             <string>Cycle 17</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_18"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_18"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_115">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_38"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_116">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_39"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <widget class="QLabel" name="label_120">
+            <property name="text">
+             <string>Cycle 18</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_21"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_21"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_121">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_42"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_122">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_43"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_44">
+          <item>
+           <widget class="QLabel" name="label_123">
+            <property name="text">
+             <string>Cycle 19</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_22"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_22"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_124">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_44"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_125">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_45"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_45">
+          <item>
+           <widget class="QLabel" name="label_126">
+            <property name="text">
+             <string>Cycle 20</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="dateEdit_23"/>
+          </item>
+          <item>
+           <widget class="QTimeEdit" name="timeEdit_23"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_127">
+            <property name="text">
+             <string>DelayTimeMinute</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_46"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_128">
+            <property name="text">
+             <string>Pump ml </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_47"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>                                                                                       </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_13">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>초기화</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_14">
+            <property name="font">
+             <font>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>저장</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>180</y>
+        <width>181</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>160</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_28">
+          <property name="text">
+           <string>Cycle Term Minute</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_25"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Delay Minute</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_16">
+          <property name="text">
+           <string>확인</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>350</y>
+         <width>160</width>
+         <height>73</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_29">
+          <property name="text">
+           <string>Pump ml</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_26"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_17">
+          <property name="text">
+           <string>확인</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>160</width>
+         <height>98</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_30">
+          <property name="text">
+           <string>Full Cyclecount</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_4">
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>14</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>15</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>16</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>17</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>18</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>19</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_18">
+          <property name="text">
+           <string>확인</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>430</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>확인</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>103</y>
+         <width>160</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_34">
+        <item>
+         <widget class="QLabel" name="label_98">
+          <property name="text">
+           <string>First Srart time</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="dateEdit_17"/>
+        </item>
+        <item>
+         <widget class="QTimeEdit" name="timeEdit_17"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_48">
+          <property name="text">
+           <string>확인</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>180</y>
+        <width>251</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>249</width>
+         <height>459</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QListWidget" name="listWidget">
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>10</y>
+        <width>291</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>131</x>
+         <y>50</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>그래프 출력</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>90</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>산소</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>90</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>온도</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>128</y>
+         <width>151</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>초기화</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>114</y>
+         <width>117</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>저장하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>10</y>
+         <width>117</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>파일이름 확인하기</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>62</y>
+         <width>117</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>저장 경로 설정</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>10</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>맑은 고딕</family>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>CYCLE 나누기</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>10</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Serial Setting</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>130</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>CPU 연결</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>70</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>맑은 고딕</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Serial Setting Check</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>633</y>
+        <width>991</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>-23</x>
+        <y>5</y>
+        <width>51</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-5</y>
+        <width>991</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>963</x>
+        <y>5</y>
+        <width>51</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>5</y>
+        <width>21</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>166</y>
+        <width>436</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>715</x>
+        <y>175</y>
+        <width>51</width>
+        <height>466</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>705</x>
+        <y>175</y>
+        <width>51</width>
+        <height>466</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>673</x>
+        <y>6</y>
+        <width>51</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="PlotWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>991</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>1</y>
+         <width>991</width>
+         <height>641</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">plotwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

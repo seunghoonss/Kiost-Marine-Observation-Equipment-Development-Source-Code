@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SerialWindow</class>
+ <widget class="QMainWindow" name="SerialWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>81</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>확인</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>280</y>
+      <width>81</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>취소</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_6">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>233</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>1 Bits</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2 Bits</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>113</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data Bits</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>73</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Baud Rate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>193</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Parity</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_5">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>None</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Odd</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Even</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mark</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Space</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>COM1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM12</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM14</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM15</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM16</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM17</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM18</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM19</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COM20</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>110</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>8 Bits</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>7 Bits</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>153</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Flow Control</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>33</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Serial Port</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>233</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Stop Bits</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>150</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>None</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Xon/Xoff</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RTS/CTS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DSR/DTR</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>70</y>
+      <width>76</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>맑은 고딕</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>1200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>4800</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>57600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>21</width>
+      <height>308</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>21</width>
+      <height>308</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>305</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>2</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
