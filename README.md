@@ -1,1 +1,1 @@
-# Kiost-Marine-Sensor-Development-Unit
+Kiost Marine Observation Equipment Development Source Code
