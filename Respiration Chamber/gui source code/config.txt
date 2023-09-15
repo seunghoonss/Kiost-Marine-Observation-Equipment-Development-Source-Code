@@ -1,0 +1,6 @@
+Cycle 4 Stir_pump_PWM 30
+Cycle Start_time_Day Start_time_Hour Cycle_Term_Minute Stir_PWM
+1 2023-02-16 15:00:00 10 30 
+2 2023-02-16 15:20:00 10 30 
+3 2023-02-16 15:40:00 10 30 
+4 2023-02-16 16:00:00 10 30 
