@@ -12,3 +12,6 @@ class DS3231_I2C:
         
     def read_time(self):
         return self.i2c.readfrom_mem(int(self.addr),int(self.reg),7);
+    
+    def stop_i2c(self,i2c):
+        self.i2c.stop()
